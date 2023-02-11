@@ -1,0 +1,18 @@
+.search {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.search-input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color-gray);
+}
+::placeholder {
+    color: var(--color-gray);
+}
+input {
+    font: inherit;
+}

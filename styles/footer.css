@@ -1,0 +1,101 @@
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--color-dark);
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.footer-logo {
+    padding: 40px 0;
+    display: block;
+}
+.footer-hr {
+   border-color: var(--color-darkergray);
+}
+.footer-links {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+    flex-flow: row;
+}
+.footer-links-column {
+    flex-basis: 33.3333%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.footer-link {
+    padding: 8px 0;
+    color: var(--color-light);
+    font-size: 0.8125rem;
+}
+.footer a:hover {
+    color: var(--color-gray);
+}
+.footer a:active {
+    color: var(--color-main);
+  }
+.footer-labels {
+    display: flex;
+    padding: 40px 0;
+    gap: 30px;
+    justify-content: center;
+}
+.footer-legal {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.lang-select {
+    border-radius: var(--border-radius);
+    border-color: var(--color-darkestgray);
+    color: var(--color-light);
+    font-size: 0.8rem;
+    padding: 10px 70px 10px 50px;
+    background: url(../images/footer/if_icon-ios7-arrow-back_211686.svg) 93% / 8% no-repeat var(--color-darkestgray);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12rem;
+}
+.lang-select:focus {
+    outline: none;
+}
+.select-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 24px;
+    margin-left: -16px;
+}
+.select-container > img {
+    position: relative;
+    left: 30px;
+}
+.tag-link {
+    display: inline-block;
+    font-size: medium;
+    color: var(--color-light);
+}
+.tag-link::before {
+    content: '#';
+    color: var(--color-main);
+}
+.img-link {
+    display: flex;
+    gap: 10px;
+    padding-top: 6px;
+    padding-bottom: 13px;
+}
+@media screen and (max-width: 576px) {
+    .footer-links {
+        flex-flow: column nowrap;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer-legal {
+        flex-flow: column nowrap;
+    }
+}

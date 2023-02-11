@@ -1,0 +1,60 @@
+.stores-header {
+    margin: 15px 0;
+}
+.stores-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 50px;
+}
+.store-card {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+.store-card:hover {
+    background-color: var(--color-lightergray);
+}
+.card-img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.card-img:hover {
+    -o-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.0, 1.011);
+    -moz-transform: scale(1.0, 1.011);
+    -webkit-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+}
+.card-img img {
+    transition: 0.3s;
+    width: 100%;
+}
+.name-card {
+    margin-top: 0.9rem;
+}
+.price-card {
+    color: var(--color-darkgray);
+}
+.time-card {
+    font-size: 0.8125rem;
+}
+.name-card,
+.price-card,
+.time-card  {
+    margin-bottom: 0.35rem;
+}
+@media screen and (max-width: 768px) {
+    .stores-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 576px) {
+    .stores-cards {
+        grid-template-columns: 1fr;
+    }
+}
